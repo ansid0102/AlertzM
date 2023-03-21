@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="49dp"
+        android:text="ALTRAK"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/TrackActivities"
+        app:layout_constraintStart_toStartOf="@+id/TrackActivities" />
+
+    <Button
+        android:id="@+id/SetTrackers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="@color/red"
+        android:text="Set Trackers"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Password_Vault"
+        app:layout_constraintStart_toStartOf="@+id/Password_Vault" />
+
+    <Button
+        android:id="@+id/TrackActivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/black"
+        android:text="Track Activities"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/SetTrackers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Password_Vault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="217dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Password Vault"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
